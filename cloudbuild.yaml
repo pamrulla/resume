@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'amrulla-com', '--image', 'gcr.io/amrulla/resume:$BUILD_ID', '--region', 'asia-south1', '--platform', 'managed']
+  args: ['run', 'deploy', 'amrulla-com', '--image', 'gcr.io/amrulla/resume:$BUILD_ID', '--region', 'asia-south1', '--platform', 'managed', '--allow-unauthenticated']
 images:
 - gcr.io/amrulla/resume:$BUILD_ID
