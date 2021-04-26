@@ -9,5 +9,5 @@ steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
   args: ['run', 'deploy', 'amrulla-com', '--image', 'gcr.io/amrulla/resume:$BUILD_ID', '--region', 'asia-south1', '--platform', 'managed']
-resume:$BUILD_IDs:
+images:
 - gcr.io/amrulla/resume:$BUILD_ID
